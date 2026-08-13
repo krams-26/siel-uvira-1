@@ -37,9 +37,9 @@
 
 - [x] Repenser l’identité visuelle en style institutionnel SIEL-EDU : bleu profond, bleu vif, vert, orange, cartes KPI et navigation latérale
 - [x] Ajouter les rubriques de navigation Gestion des écoles, Personnel, Documents & Rapports, Actes administratifs, Statistiques, Examens, Communication, Paramètres, Utilisateurs et Rôles & Permissions
-- [ ] Créer les écrans détaillés écoles : liste filtrable, fiche école, statistiques, personnel, documents et historique
-- [ ] Créer les écrans personnel et affectations avec liste des agents, fiche agent et historique des affectations
-- [ ] Créer les écrans actes administratifs, rapports manquants et portail école
+- [x] Créer les écrans détaillés écoles : liste filtrable, fiche école, statistiques, personnel, documents et historique
+- [x] Créer les écrans personnel et affectations avec liste des agents, fiche agent et historique des affectations
+- [x] Créer les écrans actes administratifs, rapports manquants et portail école
 - [x] Ajouter le formulaire structuré de commission d’affectation selon le modèle fourni
 - [x] Prévisualiser la commission d’affectation avec en-tête institutionnel et sans aucune mention « MINUTE »
 - [x] Ajouter les champs de mutation, promotion, révocation, mise en disponibilité, suspension, exclusion, désertion, maladie, retraite, décès et autres motifs du modèle
