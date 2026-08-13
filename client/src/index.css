@@ -175,3 +175,14 @@
     }
   }
 }
+
+@layer components {
+  .siel-shell {
+    background: linear-gradient(135deg, oklch(0.985 0.012 250), oklch(1 0 0) 45%, oklch(0.985 0.018 155));
+  }
+  .siel-kpi-blue { background: linear-gradient(135deg, oklch(0.58 0.19 255), oklch(0.47 0.19 255)); color: white; }
+  .siel-kpi-green { background: linear-gradient(135deg, oklch(0.68 0.17 155), oklch(0.52 0.16 155)); color: white; }
+  .siel-kpi-orange { background: linear-gradient(135deg, oklch(0.78 0.17 75), oklch(0.62 0.18 50)); color: white; }
+  .siel-kpi-violet { background: linear-gradient(135deg, oklch(0.58 0.2 292), oklch(0.43 0.2 292)); color: white; }
+  .siel-section-bar { background: linear-gradient(90deg, oklch(0.46 0.19 255), oklch(0.58 0.16 240)); color: white; }
+}

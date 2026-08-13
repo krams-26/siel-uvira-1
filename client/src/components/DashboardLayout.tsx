@@ -21,20 +21,27 @@ import {
 } from "@/components/ui/sidebar";
 import { startLogin } from "@/const";
 import { useIsMobile } from "@/hooks/useMobile";
-import { Archive, Building2, FileText, LayoutDashboard, LogOut, PanelLeft, School, Users } from "lucide-react";
+import { Archive, BarChart3, Building2, ClipboardList, FileCheck2, FileText, GraduationCap, LayoutDashboard, LogOut, MessageSquare, PanelLeft, School, Settings, ShieldCheck, UserRound, Users } from "lucide-react";
 import { CSSProperties, useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { DashboardLayoutSkeleton } from './DashboardLayoutSkeleton';
 import { Button } from "./ui/button";
 
 const menuItems = [
-  { icon: LayoutDashboard, label: "Vue d’ensemble", path: "/" },
-  { icon: FileText, label: "Dossiers & courrier", path: "/dossiers" },
-  { icon: School, label: "Écoles", path: "/ecoles" },
-  { icon: Archive, label: "GED / Archives", path: "/ged" },
-  { icon: FileText, label: "Rapports écoles", path: "/rapports" },
+  { icon: LayoutDashboard, label: "Tableau de bord", path: "/" },
+  { icon: School, label: "Gestion des écoles", path: "/ecoles" },
+  { icon: UserRound, label: "Personnel & affectations", path: "/personnel" },
+  { icon: FileText, label: "Documents & rapports", path: "/ged" },
+  { icon: ClipboardList, label: "Actes administratifs", path: "/commission-affectation" },
+  { icon: BarChart3, label: "Statistiques", path: "/statistiques" },
+  { icon: GraduationCap, label: "Portail écoles", path: "/rapports" },
+  { icon: FileCheck2, label: "Examens", path: "/examens" },
+  { icon: MessageSquare, label: "Communication", path: "/communication" },
+  { icon: Archive, label: "Dossiers & courrier", path: "/dossiers" },
   { icon: Users, label: "Utilisateurs", path: "/utilisateurs" },
   { icon: Building2, label: "Bureaux", path: "/bureaux" },
+  { icon: ShieldCheck, label: "Rôles & permissions", path: "/permissions" },
+  { icon: Settings, label: "Paramètres", path: "/parametres" },
 ];
 
 const SIDEBAR_WIDTH_KEY = "sidebar-width";
@@ -173,9 +180,10 @@ function DashboardLayoutContent({
               </button>
               {!isCollapsed ? (
                 <div className="flex items-center gap-2 min-w-0">
-                  <span className="font-semibold tracking-tight truncate">
-                    SIEL Uvira 1
-                  </span>
+                  <div className="min-w-0">
+                    <span className="block font-bold tracking-wide text-primary truncate">SIEL-EDU</span>
+                    <span className="block text-[10px] font-medium text-muted-foreground truncate">SOUS-DIVISION EDU-NC UVIRA 1</span>
+                  </div>
                 </div>
               ) : null}
             </div>

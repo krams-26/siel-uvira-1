@@ -10,6 +10,8 @@ import GedPage from "./pages/GedPage";
 import ReportsPage from "./pages/ReportsPage";
 import StatisticsPage from "./pages/StatisticsPage";
 import TemplatesPage from "./pages/TemplatesPage";
+import CommissionPage from "./pages/CommissionPage";
+import SectionPage from "./pages/SectionPage";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -22,6 +24,15 @@ function Router() {
       <Route path={"/rapports"} component={ReportsPage} />
       <Route path={"/statistiques"} component={StatisticsPage} />
       <Route path={"/modeles"} component={TemplatesPage} />
+      <Route path={"/commission-affectation"} component={CommissionPage} />
+      <Route path={"/personnel"} component={SectionPage} />
+      <Route path={"/actes"} component={SectionPage} />
+      <Route path={"/examens"} component={SectionPage} />
+      <Route path={"/communication"} component={SectionPage} />
+      <Route path={"/parametres"} component={SectionPage} />
+      <Route path={"/permissions"} component={SectionPage} />
+      <Route path={"/utilisateurs"} component={SectionPage} />
+      <Route path={"/bureaux"} component={SectionPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

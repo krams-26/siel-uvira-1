@@ -32,3 +32,15 @@
 - [x] Ajouter la consultation de l’audit et appliquer la règle de non-suppression sauf Admin
 - [x] Ajouter des tests Vitest pour séquences, transitions, audit et procédures critiques
 - [x] Vérifier réellement les vues responsive avec des captures d’écran
+
+## Adaptation aux références SIEL-EDU et commission d’affectation
+
+- [x] Repenser l’identité visuelle en style institutionnel SIEL-EDU : bleu profond, bleu vif, vert, orange, cartes KPI et navigation latérale
+- [x] Ajouter les rubriques de navigation Gestion des écoles, Personnel, Documents & Rapports, Actes administratifs, Statistiques, Examens, Communication, Paramètres, Utilisateurs et Rôles & Permissions
+- [ ] Créer les écrans détaillés écoles : liste filtrable, fiche école, statistiques, personnel, documents et historique
+- [ ] Créer les écrans personnel et affectations avec liste des agents, fiche agent et historique des affectations
+- [ ] Créer les écrans actes administratifs, rapports manquants et portail école
+- [x] Ajouter le formulaire structuré de commission d’affectation selon le modèle fourni
+- [x] Prévisualiser la commission d’affectation avec en-tête institutionnel et sans aucune mention « MINUTE »
+- [x] Ajouter les champs de mutation, promotion, révocation, mise en disponibilité, suspension, exclusion, désertion, maladie, retraite, décès et autres motifs du modèle
+- [x] Tester visuellement les nouveaux écrans sur desktop et mobile
