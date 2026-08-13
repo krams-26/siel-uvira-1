@@ -9,6 +9,7 @@ import { DossiersPage, SchoolsPage } from "./pages/Operations";
 import GedPage from "./pages/GedPage";
 import ReportsPage from "./pages/ReportsPage";
 import StatisticsPage from "./pages/StatisticsPage";
+import TemplatesPage from "./pages/TemplatesPage";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -20,6 +21,7 @@ function Router() {
       <Route path={"/ged"} component={GedPage} />
       <Route path={"/rapports"} component={ReportsPage} />
       <Route path={"/statistiques"} component={StatisticsPage} />
+      <Route path={"/modeles"} component={TemplatesPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
