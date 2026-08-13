@@ -68,3 +68,21 @@
 - [x] Rendre la création de commission d’affectation visible depuis Actes administratifs et accessible par une action "Nouvelle commission".
 - [x] Persister les commissions d’affectation avec les champs du modèle fourni, aperçu sans mention « MINUTE », validation, signature et archivage.
 - [x] Tester l’isolation entre deux écoles, les courriers ciblés/généraux, le portail école et le parcours complet de commission.
+
+## Import pilote des écoles et rapports
+
+- [x] Analyser les feuilles secondaire, primaire et maternelle du tableau fourni et normaliser les fiches écoles exploitables.
+- [x] Importer au moins 30 établissements réels avec code SECOPE, niveau, régime, effectifs et personnel disponibles.
+- [x] Préparer un précompte portail rattaché pour chaque établissement importé, sans inventer d’identité ou de coordonnées de responsable.
+- [x] Ajouter des types de rapports scolaires initiaux : palmarès, PV de réunion et document justificatif.
+- [x] Vérifier l’import en base, les fiches portail et les futurs parcours de dépôt de rapports.
+
+## Validation du portail école importé
+
+- [x] Tester un compte école importé de bout en bout : rattachement, affichage de la fiche, isolation des données et consultation des courriers.
+- [x] Vérifier le dépôt d’un palmarès, d’un PV de réunion et d’un document justificatif depuis un portail rattaché, avec visibilité côté Sous-PROVED.
+
+## Scénarios positifs d’activation et de dépôt
+
+- [ ] Tester le rattachement d’un précompte école importé à son établissement et la consultation de ses courriers reçus.
+- [ ] Tester un dépôt réussi pour les types palmarès, PV de réunion et justificatif, puis leur apparition dans la revue Sous-PROVED.
