@@ -29,12 +29,12 @@ import { Button } from "./ui/button";
 
 const menuItems = [
   { icon: LayoutDashboard, label: "Tableau de bord", path: "/" },
-  { icon: School, label: "Gestion des écoles", path: "/ecoles" },
+  { icon: School, label: "Gestion des écoles", path: "/gestion-ecoles" },
   { icon: UserRound, label: "Personnel & affectations", path: "/personnel" },
-  { icon: FileText, label: "Documents & rapports", path: "/ged" },
-  { icon: ClipboardList, label: "Actes administratifs", path: "/commission-affectation" },
+  { icon: FileText, label: "Documents & rapports", path: "/documents-rapports" },
+  { icon: ClipboardList, label: "Actes administratifs", path: "/actes-administratifs" },
   { icon: BarChart3, label: "Statistiques", path: "/statistiques" },
-  { icon: GraduationCap, label: "Portail écoles", path: "/rapports" },
+  { icon: GraduationCap, label: "Portail écoles", path: "/portail-ecoles" },
   { icon: FileCheck2, label: "Examens", path: "/examens" },
   { icon: MessageSquare, label: "Communication", path: "/communication" },
   { icon: Archive, label: "Dossiers & courrier", path: "/dossiers" },

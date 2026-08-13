@@ -12,6 +12,9 @@ import StatisticsPage from "./pages/StatisticsPage";
 import TemplatesPage from "./pages/TemplatesPage";
 import CommissionPage from "./pages/CommissionPage";
 import SectionPage from "./pages/SectionPage";
+import PersonnelPage from "./pages/PersonnelPage";
+import ActesPage from "./pages/ActesPage";
+import SchoolDetailPage from "./pages/SchoolDetailPage";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -20,12 +23,17 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/dossiers"} component={DossiersPage} />
       <Route path={"/ecoles"} component={SchoolsPage} />
+      <Route path={"/gestion-ecoles"} component={SchoolsPage} />
+      <Route path={"/ecoles/:id"} component={SchoolDetailPage} />
       <Route path={"/ged"} component={GedPage} />
+      <Route path={"/documents-rapports"} component={GedPage} />
       <Route path={"/rapports"} component={ReportsPage} />
+      <Route path={"/portail-ecoles"} component={ReportsPage} />
       <Route path={"/statistiques"} component={StatisticsPage} />
       <Route path={"/modeles"} component={TemplatesPage} />
       <Route path={"/commission-affectation"} component={CommissionPage} />
-      <Route path={"/personnel"} component={SectionPage} />
+      <Route path={"/actes-administratifs"} component={ActesPage} />
+      <Route path={"/personnel"} component={PersonnelPage} />
       <Route path={"/actes"} component={SectionPage} />
       <Route path={"/examens"} component={SectionPage} />
       <Route path={"/communication"} component={SectionPage} />

@@ -44,3 +44,15 @@
 - [x] Prévisualiser la commission d’affectation avec en-tête institutionnel et sans aucune mention « MINUTE »
 - [x] Ajouter les champs de mutation, promotion, révocation, mise en disponibilité, suspension, exclusion, désertion, maladie, retraite, décès et autres motifs du modèle
 - [x] Tester visuellement les nouveaux écrans sur desktop et mobile
+
+## Refonte fonctionnelle après retour utilisateur
+
+- [x] Vérifier systématiquement chaque entrée de navigation et supprimer toutes les routes qui renvoient vers une page générique ou 404
+- [x] Reproduire le tableau de bord de la planche avec KPI colorés, activités récentes, alertes, statistiques et recherche écoles
+- [x] Reproduire la gestion des écoles avec liste, fiche détaillée, onglets statistiques/personnel/documents/historique et actions fonctionnelles
+- [x] Reproduire la gestion du personnel avec liste, fiche agent, affectations, actes et historique
+- [x] Reproduire les écrans Documents & Rapports avec liste, ajout de document et rapports manquants
+- [x] Reproduire les écrans Actes administratifs avec liste, commission d’affectation, PV disciplinaire et PV d’ouverture
+- [x] Reproduire le portail école avec tableau de bord, dépôt de rapport, circulaires et résultats
+- [x] Brancher les boutons visibles à de vraies actions ou retirer les boutons non fonctionnels
+- [x] Vérifier toutes les routes desktop et mobile, corriger les erreurs de navigation et les états vides
