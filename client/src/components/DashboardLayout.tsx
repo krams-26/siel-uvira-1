@@ -32,6 +32,7 @@ const menuItems = [
   { icon: FileText, label: "Dossiers & courrier", path: "/dossiers" },
   { icon: School, label: "Écoles", path: "/ecoles" },
   { icon: Archive, label: "GED / Archives", path: "/ged" },
+  { icon: FileText, label: "Rapports écoles", path: "/rapports" },
   { icon: Users, label: "Utilisateurs", path: "/utilisateurs" },
   { icon: Building2, label: "Bureaux", path: "/bureaux" },
 ];

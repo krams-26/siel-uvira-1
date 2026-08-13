@@ -9,11 +9,11 @@
 - [x] Workflow de dossiers réception → orientation → instruction → avis → OPS → signature → archivage
 - [x] Historique complet de chaque transition de workflow
 - [x] Tableaux de bord Sous-PROVED, Secrétariat, Chefs de bureau et OPS
-- [ ] GED avec métadonnées, recherche, versions, aperçu et archivage
-- [ ] Stockage S3 des fichiers et persistance des références en base de données
-- [ ] Modèles documentaires avec variables {{nom_variable}} et prévisualisation
+- [x] GED avec métadonnées, recherche, versions, aperçu et archivage
+- [x] Stockage S3 des fichiers et persistance des références en base de données
+- [x] Modèles documentaires avec variables {{nom_variable}} et prévisualisation
 - [ ] Génération de documents administratifs et prévisualisation avant impression
-- [ ] Rapports des écoles avec dépôt, contrôle, validation, rejet et demande de complément
+- [x] Rapports des écoles avec dépôt, contrôle, validation, rejet et demande de complément
 - [ ] Statistiques filtrables et exports CSV, Excel et PDF
 - [x] Notifications in-app extensibles via NotificationService
 - [x] Journal d’audit non supprimable par les utilisateurs ordinaires et détaillant avant/après

@@ -6,6 +6,9 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import { DossiersPage, SchoolsPage } from "./pages/Operations";
+import GedPage from "./pages/GedPage";
+import ReportsPage from "./pages/ReportsPage";
+import StatisticsPage from "./pages/StatisticsPage";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -14,6 +17,9 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/dossiers"} component={DossiersPage} />
       <Route path={"/ecoles"} component={SchoolsPage} />
+      <Route path={"/ged"} component={GedPage} />
+      <Route path={"/rapports"} component={ReportsPage} />
+      <Route path={"/statistiques"} component={StatisticsPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
