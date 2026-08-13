@@ -24,11 +24,11 @@
 
 ## Corrections nécessaires avant livraison
 
-- [ ] Appliquer réellement les permissions granulaires aux procédures tRPC et ajouter une gestion configurable des permissions et affectations
+- [x] Appliquer réellement les permissions granulaires aux procédures tRPC et ajouter une gestion configurable des permissions et affectations
 - [ ] Compléter les modules écoles, bureaux et utilisateurs avec CRUD, filtres avancés, mises à jour et historique consultable
-- [ ] Implémenter un workflow métier contraint avec transitions autorisées, vues par rôle et historique consultable
-- [ ] Brancher le stockage S3 et les pièces jointes aux courriers et documents
-- [ ] Ajouter un NotificationService et créer automatiquement les alertes lors des événements clés
-- [ ] Ajouter la consultation de l’audit et appliquer la règle de non-suppression sauf Admin
-- [ ] Ajouter des tests Vitest pour séquences, transitions, audit et procédures critiques
+- [x] Implémenter un workflow métier contraint avec transitions autorisées, vues par rôle et historique consultable
+- [x] Brancher le stockage S3 et les pièces jointes aux courriers et documents
+- [x] Ajouter un NotificationService et créer automatiquement les alertes lors des événements clés
+- [x] Ajouter la consultation de l’audit et appliquer la règle de non-suppression sauf Admin
+- [x] Ajouter des tests Vitest pour séquences, transitions, audit et procédures critiques
 - [x] Vérifier réellement les vues responsive avec des captures d’écran

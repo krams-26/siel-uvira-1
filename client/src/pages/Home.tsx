@@ -1,4 +1,5 @@
 import DashboardLayout from "@/components/DashboardLayout";
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -15,7 +16,10 @@ function Metric({ title, value, note, icon: Icon, accent }: { title: string; val
 }
 
 export default function Home() {
+  const { user } = useAuth();
   const [search, setSearch] = useState("");
+  const roleLabels: Record<string, string> = { sous_proved: "Sous-PROVED", secretariat: "Secrétariat", chef_bureau: "Chef de bureau", ops: "OPS", inspecteur: "Inspection", ecole: "Espace école", admin: "Administration" };
+  const roleLabel = roleLabels[user?.role ?? ""] ?? "Agent";
   const dashboard = trpc.dashboard.useQuery();
   const dossiers = trpc.dossiers.list.useQuery();
   const schools = trpc.schools.list.useQuery({ search: search || undefined });
@@ -23,7 +27,7 @@ export default function Home() {
 
   return <DashboardLayout>
     <div className="mx-auto max-w-7xl space-y-8">
-      <header className="flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p className="text-sm font-medium uppercase tracking-[0.18em] text-primary">Sous-Division EDU-NC · Uvira 1</p><h1 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">Centre de pilotage administratif</h1><p className="mt-2 max-w-2xl text-muted-foreground">Une vue fiable des dossiers, des écoles et des décisions à traiter, avec un historique complet de chaque action.</p></div><Button className="gap-2 self-start"><FileText className="h-4 w-4" />Nouveau courrier</Button></header>
+      <header className="flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p className="text-sm font-medium uppercase tracking-[0.18em] text-primary">{roleLabel} · Sous-Division EDU-NC · Uvira 1</p><h1 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">{user?.role === "ops" ? "Production documentaire" : user?.role === "secretariat" ? "Registre et traitement du courrier" : user?.role === "chef_bureau" ? "Dossiers de votre bureau" : "Centre de pilotage administratif"}</h1><p className="mt-2 max-w-2xl text-muted-foreground">Une vue fiable des dossiers, des écoles et des décisions à traiter, avec un historique complet de chaque action.</p></div><Button className="gap-2 self-start"><FileText className="h-4 w-4" />Nouveau courrier</Button></header>
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"><Metric title="Écoles référencées" value={dashboard.data?.schools ?? 0} note="Référentiel centralisé" icon={School} accent="bg-emerald-100 text-emerald-700" /><Metric title="Dossiers suivis" value={dashboard.data?.dossiers ?? 0} note="Tous les circuits actifs" icon={FileText} accent="bg-blue-100 text-blue-700" /><Metric title="Priorités urgentes" value={dashboard.data?.urgent ?? 0} note="À traiter en priorité" icon={AlertTriangle} accent="bg-amber-100 text-amber-700" /><Metric title="À signer" value={dashboard.data?.pendingSignature ?? 0} note="En attente Sous-PROVED" icon={ShieldCheck} accent="bg-violet-100 text-violet-700" /></section>
       <section className="grid gap-6 lg:grid-cols-[1fr_320px]">
         <Card className="border-0 shadow-sm"><CardHeader className="flex flex-row items-center justify-between space-y-0"><div><CardTitle>Dossiers récents</CardTitle><p className="mt-1 text-sm text-muted-foreground">Suivi des entrées et décisions en cours</p></div><Button variant="outline" size="sm" className="gap-2">Voir tout <ArrowUpRight className="h-4 w-4" /></Button></CardHeader><CardContent><div className="mb-4 flex items-center gap-2 rounded-lg border bg-muted/30 px-3"><Search className="h-4 w-4 text-muted-foreground" /><Input className="border-0 bg-transparent shadow-none focus-visible:ring-0" placeholder="Rechercher par référence ou objet" /></div><div className="space-y-3">{dossiers.isLoading ? <p className="py-8 text-center text-sm text-muted-foreground">Chargement des dossiers…</p> : dossiers.data?.slice(0, 6).map(({ dossier, office, school }) => <div key={dossier.id} className="flex flex-col gap-3 rounded-xl border p-4 transition-colors hover:bg-muted/30 md:flex-row md:items-center md:justify-between"><div className="min-w-0"><div className="flex items-center gap-2"><span className="font-mono text-xs text-primary">{dossier.reference}</span><Badge variant={statusTone[dossier.status] ?? "outline"}>{statusLabels[dossier.status] ?? dossier.status}</Badge></div><p className="mt-1 truncate font-medium">{dossier.subject}</p><p className="mt-1 text-xs text-muted-foreground">{dossier.sender}{school ? ` · ${school.officialName}` : ""}{office ? ` · ${office.code}` : ""}</p></div><div className="flex items-center gap-2 text-xs text-muted-foreground"><Clock3 className="h-4 w-4" />{new Date(dossier.receivedAt).toLocaleDateString("fr-FR")}</div></div>)}{!dossiers.isLoading && !dossiers.data?.length && <div className="rounded-xl border border-dashed p-8 text-center text-sm text-muted-foreground">Aucun dossier enregistré pour le moment.</div>}</div></CardContent></Card>
