@@ -15,6 +15,13 @@
       "when": 1786619908091,
       "tag": "0001_dusty_sage",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1786644544813,
+      "tag": "0002_flaky_jigsaw",
+      "breakpoints": true
     }
   ]
 }

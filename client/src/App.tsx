@@ -15,6 +15,9 @@ import SectionPage from "./pages/SectionPage";
 import PersonnelPage from "./pages/PersonnelPage";
 import ActesPage from "./pages/ActesPage";
 import SchoolDetailPage from "./pages/SchoolDetailPage";
+import SchoolPortalPage from "./pages/SchoolPortalPage";
+import SchoolAccountsPage from "./pages/SchoolAccountsPage";
+import CommunicationPage from "./pages/CommunicationPage";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -28,7 +31,7 @@ function Router() {
       <Route path={"/ged"} component={GedPage} />
       <Route path={"/documents-rapports"} component={GedPage} />
       <Route path={"/rapports"} component={ReportsPage} />
-      <Route path={"/portail-ecoles"} component={ReportsPage} />
+      <Route path={"/portail-ecoles"} component={SchoolPortalPage} />
       <Route path={"/statistiques"} component={StatisticsPage} />
       <Route path={"/modeles"} component={TemplatesPage} />
       <Route path={"/commission-affectation"} component={CommissionPage} />
@@ -36,10 +39,10 @@ function Router() {
       <Route path={"/personnel"} component={PersonnelPage} />
       <Route path={"/actes"} component={SectionPage} />
       <Route path={"/examens"} component={SectionPage} />
-      <Route path={"/communication"} component={SectionPage} />
+      <Route path={"/communication"} component={CommunicationPage} />
       <Route path={"/parametres"} component={SectionPage} />
       <Route path={"/permissions"} component={SectionPage} />
-      <Route path={"/utilisateurs"} component={SectionPage} />
+      <Route path={"/utilisateurs"} component={SchoolAccountsPage} />
       <Route path={"/bureaux"} component={SectionPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}

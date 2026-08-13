@@ -56,3 +56,15 @@
 - [x] Reproduire le portail école avec tableau de bord, dépôt de rapport, circulaires et résultats
 - [x] Brancher les boutons visibles à de vraies actions ou retirer les boutons non fonctionnels
 - [x] Vérifier toutes les routes desktop et mobile, corriger les erreurs de navigation et les états vides
+
+## Correction prioritaire : portail des établissements et commissions
+
+- [ ] Créer un compte portail propre à chaque établissement avec rattachement strict à son école.
+- [x] Isoler les données visibles et modifiables par chaque compte école selon le RBAC et l’établissement rattaché.
+- [x] Ajouter le tableau de bord école avec informations générales, statistiques scolaires, personnels, documents, rapports, circulaires et résultats.
+- [x] Permettre à une école de compléter et mettre à jour ses statistiques et son personnel avec historique et validation côté Sous-PROVED.
+- [x] Permettre la diffusion d’un courrier à une ou plusieurs écoles ciblées, ou à toutes les écoles, avec accusé de réception et notifications.
+- [x] Ajouter un espace de consultation des courriers reçus dans chaque portail école.
+- [x] Rendre la création de commission d’affectation visible depuis Actes administratifs et accessible par une action "Nouvelle commission".
+- [x] Persister les commissions d’affectation avec les champs du modèle fourni, aperçu sans mention « MINUTE », validation, signature et archivage.
+- [x] Tester l’isolation entre deux écoles, les courriers ciblés/généraux, le portail école et le parcours complet de commission.
