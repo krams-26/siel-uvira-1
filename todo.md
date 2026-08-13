@@ -111,3 +111,9 @@
 ## Assertion de liste Actes
 
 - [x] Vérifier par test que la liste de commissions affichable dans le module Actes contient la commission DEMO archivée.
+
+## Clarification du périmètre institutionnel
+
+- [x] Vérifier qu’aucun compte Sous-PROVED, Secrétariat, Chef de bureau, OPS ou Inspecteur n’est rattaché à une école.
+- [x] Empêcher au niveau métier le rattachement d’un rôle institutionnel transverse à un établissement.
+- [x] Retirer le module Examens des parcours actifs et le documenter comme future extension de supervision, sans gestion directe des examens.

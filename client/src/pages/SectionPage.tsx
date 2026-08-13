@@ -1,14 +1,13 @@
 import DashboardLayout from "@/components/DashboardLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ClipboardList, FileCheck2, MessageSquare, Settings, ShieldCheck, UserRound } from "lucide-react";
+import { ClipboardList, MessageSquare, Settings, ShieldCheck, UserRound } from "lucide-react";
 import { useLocation } from "wouter";
 
 const sections: Record<string, { title: string; eyebrow: string; description: string; icon: typeof UserRound; cards: string[] }> = {
   "/personnel": { title: "Personnel & affectations", eyebrow: "Gestion du personnel", description: "Suivez les agents, leurs fonctions, leurs établissements et leurs actes d’affectation.", icon: UserRound, cards: ["Liste du personnel enseignant", "Fiches agents et matricules", "Historique des affectations", "Nouvelles affectations"] },
   "/actes": { title: "Actes administratifs", eyebrow: "Production documentaire", description: "Centralisez les commissions, procès-verbaux et actes administratifs validés.", icon: ClipboardList, cards: ["Commissions d’affectation", "PV disciplinaires", "PV d’ouverture", "Actes signés"] },
   "/actes-administratifs": { title: "Actes administratifs", eyebrow: "Production documentaire", description: "Centralisez les commissions, procès-verbaux et actes administratifs validés.", icon: ClipboardList, cards: ["Commissions d’affectation", "PV disciplinaires", "PV d’ouverture", "Actes signés"] },
-  "/examens": { title: "Examens", eyebrow: "Suivi scolaire", description: "Préparez les campagnes, candidats, résultats et états récapitulatifs.", icon: FileCheck2, cards: ["Campagnes en cours", "Candidats inscrits", "Résultats à publier", "États statistiques"] },
   "/communication": { title: "Communication", eyebrow: "Circulaires & alertes", description: "Diffusez les circulaires et suivez les communications adressées aux établissements.", icon: MessageSquare, cards: ["Nouvelles circulaires", "Destinataires", "Accusés de réception", "Notifications"] },
   "/parametres": { title: "Paramètres", eyebrow: "Configuration institutionnelle", description: "Configurez les séquences, bureaux, modèles et règles de la Sous-Division.", icon: Settings, cards: ["Bureaux et séquences", "Modèles documentaires", "Canaux de notification", "Préférences"] },
   "/permissions": { title: "Rôles & permissions", eyebrow: "Gouvernance", description: "Administrez les rôles et les permissions d’action avec une traçabilité complète.", icon: ShieldCheck, cards: ["Rôles applicatifs", "Permissions par action", "Affectations bureaux", "Journal d’audit"] },

@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/sidebar";
 import { startLogin } from "@/const";
 import { useIsMobile } from "@/hooks/useMobile";
-import { Archive, BarChart3, Building2, ClipboardList, FileCheck2, FileText, GraduationCap, LayoutDashboard, LogOut, MessageSquare, PanelLeft, School, Settings, ShieldCheck, UserRound, Users } from "lucide-react";
+import { Archive, BarChart3, Building2, ClipboardList, FileText, GraduationCap, LayoutDashboard, LogOut, MessageSquare, PanelLeft, School, Settings, ShieldCheck, UserRound, Users } from "lucide-react";
 import { CSSProperties, useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { DashboardLayoutSkeleton } from './DashboardLayoutSkeleton';
@@ -35,7 +35,6 @@ const menuItems = [
   { icon: ClipboardList, label: "Actes administratifs", path: "/actes-administratifs" },
   { icon: BarChart3, label: "Statistiques", path: "/statistiques" },
   { icon: GraduationCap, label: "Portail écoles", path: "/portail-ecoles" },
-  { icon: FileCheck2, label: "Examens", path: "/examens" },
   { icon: MessageSquare, label: "Communication", path: "/communication" },
   { icon: Archive, label: "Dossiers & courrier", path: "/dossiers" },
   { icon: Users, label: "Utilisateurs", path: "/utilisateurs" },

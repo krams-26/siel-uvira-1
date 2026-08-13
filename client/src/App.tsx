@@ -38,7 +38,6 @@ function Router() {
       <Route path={"/actes-administratifs"} component={ActesPage} />
       <Route path={"/personnel"} component={PersonnelPage} />
       <Route path={"/actes"} component={SectionPage} />
-      <Route path={"/examens"} component={SectionPage} />
       <Route path={"/communication"} component={CommunicationPage} />
       <Route path={"/parametres"} component={SectionPage} />
       <Route path={"/permissions"} component={SectionPage} />
