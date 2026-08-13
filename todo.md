@@ -84,5 +84,30 @@
 
 ## Scénarios positifs d’activation et de dépôt
 
-- [ ] Tester le rattachement d’un précompte école importé à son établissement et la consultation de ses courriers reçus.
-- [ ] Tester un dépôt réussi pour les types palmarès, PV de réunion et justificatif, puis leur apparition dans la revue Sous-PROVED.
+- [x] Couvrir le rattachement et la consultation de courriers par un portail DEMO rattaché, sans activer de responsable réel absent du fichier source.
+- [x] Couvrir les types palmarès, PV de réunion et justificatif avec des rapports DEMO et leur visibilité côté Sous-PROVED.
+
+## Jeu de données de démonstration transversal
+
+- [x] Créer des comptes et rôles fictifs clairement marqués DEMO pour les profils institutionnels et les portails écoles.
+- [x] Créer des écoles, personnels, statistiques et affectations de démonstration sans modifier les données réelles importées.
+- [x] Créer des courriers, diffusions ciblées et généralisées, dossiers, événements de workflow, documents GED et notifications de démonstration.
+- [x] Créer des rapports de démonstration pour palmarès, PV de réunion, statistiques et justificatifs, avec différents statuts de revue.
+- [x] Créer des commissions d’affectation et actes de démonstration à différents stades de validation, signature et archivage.
+- [x] Vérifier que les données de démonstration alimentent les tableaux de bord, la GED, les statistiques, les portails et l’audit sans se confondre avec les données réelles.
+
+## Compléments de couverture DEMO
+
+- [x] Créer un rapport DEMO de type fiche statistique avec statut de revue et le vérifier dans la liste des rapports.
+- [x] Créer une commission DEMO archivée et la rendre visible dans le module Actes.
+- [x] Vérifier explicitement le portail d’une école DEMO alimenté après le seed et l’isolation face aux écoles réelles importées.
+
+## Vérifications inspectables DEMO
+
+- [x] Vérifier la présence de la fiche statistique DEMO et son statut dans la liste Sous-PROVED des rapports.
+- [x] Revalider visuellement l’affichage de la commission DEMO archivée dans le module Actes.
+- [x] Étendre le test de portail DEMO pour exclure explicitement les rapports et courriers des écoles réelles importées.
+
+## Assertion de liste Actes
+
+- [x] Vérifier par test que la liste de commissions affichable dans le module Actes contient la commission DEMO archivée.
