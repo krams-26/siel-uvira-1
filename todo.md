@@ -59,7 +59,7 @@
 
 ## Correction prioritaire : portail des établissements et commissions
 
-- [ ] Créer un compte portail propre à chaque établissement avec rattachement strict à son école.
+- [x] Permettre l’activation d’un compte portail école via la connexion OAuth puis son rattachement strict à une seule école depuis l’administration.
 - [x] Isoler les données visibles et modifiables par chaque compte école selon le RBAC et l’établissement rattaché.
 - [x] Ajouter le tableau de bord école avec informations générales, statistiques scolaires, personnels, documents, rapports, circulaires et résultats.
 - [x] Permettre à une école de compléter et mettre à jour ses statistiques et son personnel avec historique et validation côté Sous-PROVED.
